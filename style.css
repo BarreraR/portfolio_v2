@@ -144,3 +144,16 @@ a:active {
     background-color: lightgray;
     padding-top: 10px;
 }
+
+#contact {
+    background-color: lightgray;
+    padding-top: 10px;
+}
+
+#contact div {
+    margin-bottom: 0;
+}
+
+footer p {
+    margin-top: 0;
+}
