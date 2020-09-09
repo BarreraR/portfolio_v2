@@ -1,16 +1,18 @@
+/* sets width of main content */
+main {
+    /* margin: auto; */
+    background-color: darkgray;
+}
+
 /* Sets background color of entire page */
 body {
-    background: darkgray;
+    margin: auto;
 }
 
 /* header and footer background and text color */
 header, footer {
     background: darkslategrey;
     color: white;
-}
-
-header{
-    height: 130px;
 }
 
 /* header settings */
@@ -39,83 +41,37 @@ article > h2 {
     padding-left: 20px;
 }
 
-#intro img {
-    border-radius: 0;
-}
 /* sets width of all images */
 img {
     width: 100%;
     border-radius: 20px;
 }
 
-/* sets width of main content */
-main {
-    /* padding: 0 100px; */
-    margin: auto;
+#intro img {
+    border-radius: 0;
 }
 
-/* article img {
-    margin-top: 30px;
-} */
-
-footer p {
-    padding: 10px 0;
-    margin-bottom: 0;
+/* navbar styling */
+header nav {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    list-style: none;
 }
 
-/* link psudo classes */
-a:link{
-    color: blue;
+header nav a {
+    color: white;
     text-decoration: none;
+    margin: 0 20px 10px 0;
 }
 
-a:visited{
-    color: purple;
-}
-
-a:hover {
-    color: green;
-    text-decoration: underline;
-}
-
-a:active {
-    color: red;
-}
-
-/* navigation bar settings */
-.navbar {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: lightyellow;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 700;
-    border-radius: 20px;
-}
-.navbar:link{
-    color: red;
-}
-
-.navbar:visited{
-    color: orange;
-}
-
-.navbar:hover {
-    color: green;
-    background-color: lightgray;
-    text-decoration: none;
-    transform: scale(1.2);
-    border: solid;
-}
-.navbar:active {
-    color: cyan;
+header nav a:last-child {
+    margin-right: 0;
 }
 
 .group {
     display: flex;
     flex-direction: column;
-    
-    
 }
 
 .item {
@@ -138,6 +94,17 @@ a:active {
         margin-bottom: 0;
         padding-left: 120px;
     }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+    }
+
+    header nav a {
+        margin-bottom: 0;
+    }
 }
 
 #about {
@@ -155,5 +122,20 @@ a:active {
 }
 
 footer p {
-    margin-top: 0;
+    margin: 0;
+}
+
+#email-form {
+    background-color: darkgray;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+}
+
+form textarea {
+    height: 160px;
 }
