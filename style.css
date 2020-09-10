@@ -6,7 +6,12 @@ main {
 
 /* Sets background color of entire page */
 body {
+    background-color: darkslategray;
+}
+
+.wrapper {
     margin: auto;
+    max-width: 1000px;
 }
 
 /* header and footer background and text color */
@@ -48,7 +53,7 @@ img {
 }
 
 #intro img {
-    border-radius: 0;
+    border-radius: 0px;
 }
 
 /* navbar styling */
@@ -105,6 +110,11 @@ header nav a:last-child {
     header nav a {
         margin-bottom: 0;
     }
+
+    #projects div div{
+        border-top: 10px inset darkslategray;
+        border-right: 10px solid white;
+    }
 }
 
 #about {
@@ -138,4 +148,21 @@ form textarea {
 
 form textarea {
     height: 160px;
+    resize: none;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+button {
+    border-radius: 10px; 
+}
+
+p a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700; 
 }
