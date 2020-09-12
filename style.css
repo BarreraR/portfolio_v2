@@ -28,6 +28,27 @@ h1 {
     font-size: 36px;
 }
 
+.stack {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.stack ul, h4 {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-links p {
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: lightgray;
+    text-align: right;
+    flex-direction: column;
+}
+
 h3{
     font-size: 18px;
     margin: 0 0 10px 0; 
@@ -111,9 +132,9 @@ header nav a:last-child {
         margin-bottom: 0;
     }
 
-    #projects div div{
-        border-top: 10px inset darkslategray;
-        border-right: 10px solid white;
+    #projects > div > div {
+        border-top: 5px inset darkslategray;
+        border-right: 5px solid white;
     }
 }
 
