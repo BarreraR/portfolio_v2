@@ -112,7 +112,7 @@ header nav a:last-child {
 @media all and (min-width: 800px){
     .group {
         flex-direction: row;
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
         padding: 0 100px;
     }
 
@@ -132,9 +132,12 @@ header nav a:last-child {
         margin-bottom: 0;
     }
 
-    #projects > div > div {
-        border-top: 5px inset darkslategray;
+    #project-one, #project-two {
         border-right: 5px solid white;
+    }
+
+    #projects {
+        margin-bottom: 35px;
     }
 }
 
@@ -145,6 +148,10 @@ header nav a:last-child {
 
 #contact {
     background-color: lightgray;
+    padding-top: 10px;
+}
+
+#projects {
     padding-top: 10px;
 }
 
